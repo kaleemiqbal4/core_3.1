@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JWT_POC</name>
+    </assembly>
+    <members>
+        <member name="T:JWT_POC.Business.Concrete.IUserBusiness">
+            <summary>User Contract</summary>
+        </member>
+        <member name="M:JWT_POC.Business.Concrete.IUserBusiness.GetToken">
+            <summary></summary>
+            <returns></returns>
+        </member>
+        <member name="T:JWT_POC.Business.Contract.UserBusiness">
+            <summary>User Business</summary>
+        </member>
+        <member name="M:JWT_POC.Business.Contract.UserBusiness.#ctor">
+            <summary>Constructor </summary>
+        </member>
+        <member name="M:JWT_POC.Business.Contract.UserBusiness.GetToken">
+            <summary>Genrate Token and return</summary>
+            <returns>Token</returns>
+        </member>
+        <member name="T:JWT_POC.Controller.UserController">
+            <summary>User Controller</summary>
+        </member>
+        <member name="M:JWT_POC.Controller.UserController.#ctor(JWT_POC.Business.Concrete.IUserBusiness,Microsoft.Extensions.Logging.ILogger{JWT_POC.Controller.UserController})">
+            <summary>Constructor of User Controller</summary>
+            <param name="userBusiness"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:JWT_POC.Controller.UserController.GetUser">
+            <summary>Get All User</summary>
+            <returns></returns>
+        </member>
+        <member name="T:JWT_POC.Program">
+            <summary>Program Console class </summary>
+        </member>
+        <member name="M:JWT_POC.Program.Main(System.String[])">
+            <summary>
+            Entry Method
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:JWT_POC.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            CreateHostBuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:JWT_POC.Registration.RegistrationSwagger">
+            <summary>Swagger Implementation</summary>
+        </member>
+        <member name="M:JWT_POC.Registration.RegistrationSwagger.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            AddSwagger
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:JWT_POC.Registration.RegistrationSwagger.SwaggerPipeLine(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Add Swagger in Http PipeLine
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:JWT_POC.ServiceDependencies">
+            <summary>Service Dependencies Extension Static Class</summary>
+        </member>
+        <member name="M:JWT_POC.ServiceDependencies.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary></summary>
+            <param name="services"></param>
+            <returns>Service container</returns>
+        </member>
+        <member name="M:JWT_POC.ServiceDependencies.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary></summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:JWT_POC.Startup">
+            <summary>StartUP class </summary>
+        </member>
+        <member name="P:JWT_POC.Startup.Configuration">
+            <summary>Start Up Class</summary>
+            <summary></summary>
+        </member>
+        <member name="M:JWT_POC.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary> Constructor </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:JWT_POC.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:JWT_POC.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
