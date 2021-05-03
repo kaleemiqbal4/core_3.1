@@ -4,6 +4,13 @@
         <name>JWT_POC</name>
     </assembly>
     <members>
+        <member name="T:JWT_POC.Autofac.Autofac">
+            <summary>Autofac</summary>
+        </member>
+        <member name="M:JWT_POC.Autofac.Autofac.ResolveDependency(Autofac.ContainerBuilder)">
+            <summary>Register Dependency</summary>
+            <param name="builder"></param>
+        </member>
         <member name="T:JWT_POC.Autofac.DependencyRegister">
             <summary>Resolve Dependency</summary>
         </member>
@@ -31,7 +38,7 @@
         <member name="T:JWT_POC.Controller.UserController">
             <summary>User Controller</summary>
         </member>
-        <member name="M:JWT_POC.Controller.UserController.#ctor(JWT_POC.Business.Concrete.IUserBusiness,Microsoft.Extensions.Logging.ILogger{JWT_POC.Controller.UserController})">
+        <member name="M:JWT_POC.Controller.UserController.#ctor(JWT_POC.Business.Concrete.IUserBusiness,JWT_POC.Middleware.Concrete.IJwt,Microsoft.Extensions.Logging.ILogger{JWT_POC.Controller.UserController})">
             <summary>Constructor of User Controller</summary>
             <param name="userBusiness"></param>
             <param name="logger"></param>
@@ -40,11 +47,45 @@
             <summary>Get All User</summary>
             <returns></returns>
         </member>
+        <member name="M:JWT_POC.Controller.UserController.Login(JWT_POC.Models.Request.UserModel)">
+            <summary></summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
         <member name="T:JWT_POC.Middleware.Concrete.IJwt">
             <summary>Jwt Contractor</summary>
         </member>
+        <member name="M:JWT_POC.Middleware.Concrete.IJwt.GenerateJSONWebToken(JWT_POC.Models.Request.UserModel)">
+            <summary></summary>
+            <param name="userInfo"></param>
+            <returns>String Token</returns>
+        </member>
         <member name="T:JWT_POC.Middleware.Contract.Jwt">
             <summary>Jwt Class</summary>
+        </member>
+        <member name="M:JWT_POC.Middleware.Contract.Jwt.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary></summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:JWT_POC.Middleware.Contract.Jwt.GenerateJSONWebToken(JWT_POC.Models.Request.UserModel)">
+            <summary></summary>
+            <param name="userInfo"></param>
+            <returns>String Token</returns>
+        </member>
+        <member name="T:JWT_POC.Models.Request.UserModel">
+            <summary>User Model</summary>
+        </member>
+        <member name="P:JWT_POC.Models.Request.UserModel.UserName">
+            <summary>User Name</summary>
+        </member>
+        <member name="P:JWT_POC.Models.Request.UserModel.Password">
+            <summary>User Password</summary>
+        </member>
+        <member name="P:JWT_POC.Models.Request.UserModel.EmailAddress">
+            <summary>Email Address</summary>
+        </member>
+        <member name="P:JWT_POC.Models.Request.UserModel.DateOfJoing">
+            <summary></summary>
         </member>
         <member name="T:JWT_POC.Program">
             <summary>Program Console class </summary>
@@ -61,6 +102,14 @@
             </summary>
             <param name="args"></param>
             <returns></returns>
+        </member>
+        <member name="T:JWT_POC.Registration.JwtRegister">
+            <summary> </summary>
+        </member>
+        <member name="M:JWT_POC.Registration.JwtRegister.RegisterJwt(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary></summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
         </member>
         <member name="T:JWT_POC.Registration.RegistrationSwagger">
             <summary>Swagger Implementation</summary>

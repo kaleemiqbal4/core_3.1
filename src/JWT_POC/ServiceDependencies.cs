@@ -23,6 +23,7 @@ namespace JWT_POC
         /// <param name="app"></param>
         public static void Configure(this IApplicationBuilder app)
         {
+            app.UseAuthentication();
             app.UseRouting();
             Cors(app);
             UseEndpoints(app);

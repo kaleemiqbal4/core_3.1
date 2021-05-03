@@ -1,11 +1,11 @@
 ﻿using Autofac;
 using JWT_POC.Autofac;
+using JWT_POC.Registration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace JWT_POC
 {
@@ -33,6 +33,7 @@ namespace JWT_POC
         {
             services.ConfigureServices();
             services.AddOptions();
+            services.RegisterJwt(Configuration);
         }
 
         /// <summary></summary>
