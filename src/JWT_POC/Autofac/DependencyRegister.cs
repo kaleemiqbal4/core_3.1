@@ -1,6 +1,4 @@
 ﻿using Autofac;
-using JWT_POC.Business.Concrete;
-using JWT_POC.Business.Contract;
 
 namespace JWT_POC.Autofac
 {
@@ -11,7 +9,7 @@ namespace JWT_POC.Autofac
         /// <param name="builder"></param>
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<UserBusiness>().As<IUserBusiness>();
+            builder.ResolveDependency();
         }
     }
 }

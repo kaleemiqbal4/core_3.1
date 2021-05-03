@@ -60,3 +60,11 @@ D:\core\JWT\JWT_POC\JWT_POC\obj\Debug\netcoreapp3.1\JWT_POC.MvcApplicationPartsA
 D:\core\JWT\JWT_POC\JWT_POC\obj\Debug\netcoreapp3.1\JWT_POC.csproj.CopyComplete
 D:\core\JWT\JWT_POC\src\JWT_POC\bin\Debug\netcoreapp3.1\JWT_POC.xml
 D:\core\JWT\JWT_POC\src\JWT_POC\obj\Debug\netcoreapp3.1\JWT_POC.csprojAssemblyReference.cache
+D:\core\JWT\JWT_POC\src\JWT_POC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\core\JWT\JWT_POC\src\JWT_POC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\core\JWT\JWT_POC\src\JWT_POC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\core\JWT\JWT_POC\src\JWT_POC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\core\JWT\JWT_POC\src\JWT_POC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\core\JWT\JWT_POC\src\JWT_POC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\core\JWT\JWT_POC\src\JWT_POC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\core\JWT\JWT_POC\src\JWT_POC\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
