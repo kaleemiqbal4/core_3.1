@@ -2,7 +2,7 @@
 using JWT_POC.Business.Concrete;
 using JWT_POC.Business.Contract;
 
-namespace JWT_POC.AutoMapper
+namespace JWT_POC.Autofac
 {
     /// <summary>Resolve Dependency</summary>
     public class DependencyRegister: Module
