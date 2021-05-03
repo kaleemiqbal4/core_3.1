@@ -4,10 +4,10 @@
         <name>JWT_POC</name>
     </assembly>
     <members>
-        <member name="T:JWT_POC.AutoMapper.DependencyRegister">
+        <member name="T:JWT_POC.Autofac.DependencyRegister">
             <summary>Resolve Dependency</summary>
         </member>
-        <member name="M:JWT_POC.AutoMapper.DependencyRegister.Load(Autofac.ContainerBuilder)">
+        <member name="M:JWT_POC.Autofac.DependencyRegister.Load(Autofac.ContainerBuilder)">
             <summary></summary>
             <param name="builder"></param>
         </member>
@@ -39,6 +39,12 @@
         <member name="M:JWT_POC.Controller.UserController.GetUser">
             <summary>Get All User</summary>
             <returns></returns>
+        </member>
+        <member name="T:JWT_POC.Middleware.Concrete.IJwt">
+            <summary>Jwt Contractor</summary>
+        </member>
+        <member name="T:JWT_POC.Middleware.Contract.Jwt">
+            <summary>Jwt Class</summary>
         </member>
         <member name="T:JWT_POC.Program">
             <summary>Program Console class </summary>

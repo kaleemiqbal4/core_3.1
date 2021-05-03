@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using JWT_POC.AutoMapper;
+using JWT_POC.Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
