@@ -15,6 +15,7 @@ namespace JWT_POC
             services.AddSwagger();
             services.AddControllers();
             services.AddRouting();
+            services.AddAuthorization();
             services.AddCors();
             return services;
         }
@@ -23,9 +24,10 @@ namespace JWT_POC
         /// <param name="app"></param>
         public static void Configure(this IApplicationBuilder app)
         {
-            app.UseAuthentication();
             app.UseRouting();
             Cors(app);
+            app.UseAuthentication();
+            app.UseAuthorization();
             UseEndpoints(app);
             app.SwaggerPipeLine();
         }

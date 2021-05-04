@@ -30,12 +30,13 @@ namespace JWT_POC.Controller
         /// <summary>Get All User</summary>
         /// <returns></returns>
         [HttpGet]
+        [Authorize]
         public IActionResult GetUser()
         {
             _logger.LogDebug("Get All User By Id Called");
             var token = _userBusiness.GetToken();
             _logger.LogInformation("User Token is = " , token);
-            return Ok("User List Returned " + token);
+            return Ok(new { authToken = token });
         }
 
        /// <summary></summary>
@@ -48,7 +49,7 @@ namespace JWT_POC.Controller
             _logger.LogDebug("Get All User By Id Called");
             var token = _jwt.GenerateJSONWebToken(user);
             _logger.LogInformation("User Token is = ", token);
-            return Ok(token);
+            return Ok(new { authToken = token });
         }
     }
 }
