@@ -29,10 +29,12 @@ namespace JWT_POC.Controller
 
         /// <summary>Get All User</summary>
         /// <returns></returns>
-        [HttpGet]
+        [HttpGet("employees/{id}/{userName}")]
         [Authorize]
         public IActionResult GetUser()
         {
+            var re = Request;
+            var headers = re.Headers;
             _logger.LogDebug("Get All User By Id Called");
             var token = _userBusiness.GetToken();
             _logger.LogInformation("User Token is = " , token);
